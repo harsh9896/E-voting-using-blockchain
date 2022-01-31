@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Sidebar 04</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+	  		<h1><a href="index.html" class="logo">iVote</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home mr-3"></span> Homepage</a>
+          </li>
+          <li>
+              <a href="http://127.0.0.1:5500/loginuserdatabase/reg.html"><span class="fa fa-user mr-3"></span> Registration</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/how-it-works.html"><span class="fa fa-sticky-note mr-3"></span> Voting Booth</a>
+          </li>
+        
+        
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">User-Manual</h2>
+       <div class="container">
+         <div>There are few guidelines for the user:
+           <ol>
+             <li> Voter Registration
+              <ul>
+                <li>For casting the vote user need to register himself.The registration form is provide in the left side of the system.click on it</li>
+                <li>The voter can only register in the registration phase.Once registration phase is over a voter cannot register.</li>
+                <li>For registration, user need to enter his aadhar number and his account address  </li>
+                <li>At first stage the user age is verified only voter above 18 are allowed to register</li>
+                <li>Otp bad me team se discuss krke dekh lenge</li>
+              </ul>
+             </li>
+             <li>Voting Process
+               <ul>
+                 <p> voting process is divided into 3 phases:</p>
+                 <li><b>Registration phase:</b>Here the registration of user is carried out.</li>
+                 <li><b>Voting Phase:</b> After initialization of voting phase from the admin,user can cast vote.The vote can be cast by simple cicking the "voting" button,after which a transaction will take place from the user account to the selected candidate account. After voting phase, voter will not be able to cast vote</li>
+                 <li><b>Result Phase:</b> This is the final stage where the user can see the result who won the election.</li>
+                 
+               </ul>
+             </li>
+
+           </ol>
+         </div>
+       </div>
+      </div>
+		</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            .set{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .tag{
+                width: 293%;
+    border: 2px solid black;
+    border-radius: 10px;
+            }
+            .heading{
+                font-size:30px;
+                color:black;
+            }
+           
+        </style>
+  </head>
+  <body>
+		
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+	  		<h1><a href="index.html" class="logo">iVote</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="http://localhost:4000/welcome"><span class="fa fa-home mr-3"></span> Homepage</a>
+          </li>
+          <li>
+              <a href="#"><span class="fa fa-user mr-3"></span> Registration</a>
+          </li>
+          <li>
+            <a href="http://localhost:3000/how-it-works.html"><span class="fa fa-sticky-note mr-3"></span> Voting Booth</a>
+          </li>
+          
+        
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+        
+      <div id="content" class="p-4 p-md-5 pt-5 set">
+        <p class="heading">Registration form</p>
+        <form action="http://127.0.0.1:4000/registerUser" method="POST">
+          <div class="form-group ">
+            <label>Name</label>
+            <input type="text" class="form-control tag" name="name"  aria-describedby="emailHelp" placeholder="Enter name" Required>
+            
+          </div>
+
+          <div class="form-group ">
+            <label>Password</label>
+            <input type="text" class="form-control tag" name="password"  aria-describedby="emailHelp" pattern= .{8,} placeholder="Enter password " Required>
+            
+          </div>
+          
+            <div class="form-group ">
+              <label for="exampleInputNumber">Aadhar</label>
+              <input type="text" class="form-control tag" name="aadhar" pattern=[0-9]{12}  aria-describedby="emailHelp" placeholder="Enter aadhar number" Required>
+              
+            </div>
+            <div class="form-group ">
+              <label >Email Address</label>
+              <input type="text" class="form-control tag" name="address"  placeholder="address" Required>
+            </div>
+          
+            <button type="submit" class="btn btn-primary" id= "xy" >Submit</button>
+          </form>
+      
+       </div>
+      </div>
+		</div>
+</form>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
+</html>
